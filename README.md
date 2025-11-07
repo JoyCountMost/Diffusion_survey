@@ -17,21 +17,21 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td rowspan="3"><strong>Training data extraction</strong></td>
-    <td><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/carlini">Extracting Training Data from Diffusion Models (USENIX Security &#39;23)</a></td>
+    <td><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/carlini">Extracting Training Data from Diffusion Models</a></td>
     <td>Black-box, White-box</td>
     <td>OpenAI-DDPM, DDPM</td>
     <td>Extract training samples from DMs</td>
     <td>Explainability of regenerating parts of their training datasets</td>
   </tr>
   <tr>
-    <td><a href="https://openreview.net/forum?id=84n3UwkH7b">Detecting, Explaining, and Mitigating Memorization in Diffusion Models (ICLR &#39;24)</a></td>
+    <td><a href="https://openreview.net/forum?id=84n3UwkH7b">Detecting, Explaining, and Mitigating Memorization in Diffusion Models</a></td>
     <td>White-box</td>
     <td>DDIM</td>
     <td>Able to achieve an AUC of 0.999 and TPR@1%FPR of 0.988</td>
     <td>A tunable threshold is required to be determined</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/abs/2408.15721">SIDE: Surrogate Conditional Data Extraction from Diffusion Models (arXiv &#39;24)</a></td>
+    <td><a href="https://arxiv.org/abs/2408.15721">SIDE: Surrogate Conditional Data Extraction from Diffusion Models</a></td>
     <td>White-box</td>
     <td>DDIM</td>
     <td>Highly effective in extracting memorized data</td>
@@ -40,7 +40,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td><strong>Gradient inversion</strong></td>
-    <td><a href="https://arxiv.org/abs/2405.20380">Gradient Inversion of Federated Diffusion Models (arXiv &#39;24)</a></td>
+    <td><a href="https://arxiv.org/abs/2405.20380">Gradient Inversion of Federated Diffusion Models</a></td>
     <td>Grey-box, Black-box</td>
     <td>DDPM</td>
     <td>Reconstruct high-resolution images from the gradients</td>
@@ -49,77 +49,77 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td rowspan="11"><strong>Membership inference</strong></td>
-    <td><a href="https://arxiv.org/abs/2210.00968">Membership Inference Attacks Against Text-to-Image Generation Models (arXiv &#39;22)</a></td>
+    <td><a href="https://arxiv.org/abs/2210.00968">Membership Inference Attacks Against Text-to-Image Generation Models</a></td>
     <td>Black-box</td>
     <td>LDM, DALL-E mini</td>
     <td>Achieve remarkable attack performance</td>
     <td>Requires auxiliary datasets</td>
   </tr>
   <tr>
-    <td><a href="https://proceedings.mlr.press/v202/duan23b/duan23b.pdf">Are Diffusion Models Vulnerable to Membership Inference Attacks? (ICML &#39;23)</a></td>
+    <td><a href="https://proceedings.mlr.press/v202/duan23b/duan23b.pdf">Are Diffusion Models Vulnerable to Membership Inference Attacks? </a></td>
     <td>Gray-box</td>
     <td>SD, LDM, DDPM</td>
     <td>Infer the memberships of training samples</td>
     <td>Access to the step-wise query results of DMs</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/pdf/2302.03262">Membership Inference Attacks Against Diffusion Models (IEEE SPW &#39;23)</a></td>
+    <td><a href="https://arxiv.org/pdf/2302.03262">Membership Inference Attacks Against Diffusion Models</a></td>
     <td>White-box, Black-box</td>
     <td>DDIM</td>
     <td>The resilience of DMs to MIA is comparable to that of GANs</td>
     <td>When training samples are small</td>
   </tr>
   <tr>
-    <td><a href="https://proceedings.mlr.press/v235/tang24g.html">Membership Inference Attacks on Diffusion Models via Quantile Regression (ICML &#39;24)</a></td>
+    <td><a href="https://proceedings.mlr.press/v235/tang24g.html">Membership Inference Attacks on Diffusion Models via Quantile Regression</a></td>
     <td>White-box, Black-box</td>
     <td>DDPM</td>
     <td>Quantile regression models are trained to predict reconstruction-loss distribution for unseen data</td>
     <td>Direct access to the trained model</td>
   </tr>
   <tr>
-    <td><a href="https://openreview.net/forum?id=rpH9FcCEV6">Efficient Membership Inference for Diffusion Models by Proximal Initialization (ICLR &#39;24)</a></td>
+    <td><a href="https://openreview.net/forum?id=rpH9FcCEV6">Efficient Membership Inference for Diffusion Models by Proximal Initialization</a></td>
     <td>Gray-box</td>
     <td>DDPM, SD</td>
     <td>Utilize ground-truth trajectory and predicted point to infer memberships</td>
     <td>Access intermediate outputs of DMs</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/abs/2405.14800">Membership Inference on T2I Diffusion via Conditional Likelihood Discrepancy (arXiv &#39;24)</a></td>
+    <td><a href="https://arxiv.org/abs/2405.14800">Membership Inference on T2I Diffusion via Conditional Likelihood Discrepancy</a></td>
     <td>Gray-box</td>
     <td>SD v1-4</td>
     <td>Estimate the gap between conditional image–text likelihood and images-only likelihood</td>
     <td>Evaluations under the pretraining setting are insufficient</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/abs/2403.08487">Model Will Tell: Training Membership Inference for Diffusion Models (arXiv &#39;24)</a></td>
+    <td><a href="https://arxiv.org/abs/2403.08487">Model Will Tell: Training Membership Inference for Diffusion Models</a></td>
     <td>Gray-box</td>
     <td>LDM, DDPM</td>
     <td>Leverage the intrinsic generative priors within the DMs</td>
     <td>Lack sufficient theoretical evidence</td>
   </tr>
   <tr>
-    <td><a href="https://dl.acm.org/doi/10.1145/3664647.3681170">Unveiling Structural Memorization: Structural MIA for T2I Diffusion (ACM MM &#39;24)</a></td>
+    <td><a href="https://dl.acm.org/doi/10.1145/3664647.3681170">Unveiling Structural Memorization: Structural MIA for T2I Diffusion</a></td>
     <td>Gray-box</td>
     <td>DDIM</td>
     <td>First investigate the structural changes during the diffusion process</td>
     <td>Limited to structure-based MIA</td>
   </tr>
   <tr>
-    <td><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zhang_Generated_Distributions_Are_All_You_Need_for_Membership_Inference_Attacks_WACV_2024_paper.pdf">Generated Distributions Are All You Need for Membership Inference Attacks Against Generative Models (WACV &#39;24)</a></td>
+    <td><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zhang_Generated_Distributions_Are_All_You_Need_for_Membership_Inference_Attacks_WACV_2024_paper.pdf">Generated Distributions Are All You Need for Membership Inference Attacks Against Generative Models </a></td>
     <td>Black-box</td>
     <td>DDPM, DDIM, FastDPM, VQGAN, LDM, CC-FPSE</td>
     <td>Generalize MIA against various generative models including GANs, VAEs, IFs, and DDPMs</td>
     <td>Requires auxiliary datasets</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/abs/2405.20771">Towards Black-box Membership Inference Attack for Diffusion Models (arXiv &#39;24)</a></td>
+    <td><a href="https://arxiv.org/abs/2405.20771">Towards Black-box Membership Inference Attack for Diffusion Models</a></td>
     <td>Black-box</td>
     <td>DDIM, Diffusion Transformer, SD, DALL-E 2</td>
     <td>Only require access to the variation API of the model</td>
     <td>Requirement for a moderate diffusion step t in the variation API</td>
   </tr>
   <tr>
-    <td><a href="https://www.ndss-symposium.org/ndss-paper/black-box-membership-inference-attacks-against-fine-tuned-diffusion-models/">Black-box Membership Inference Attacks Against Fine-tuned Diffusion Models (NDSS &#39;25)</a></td>
+    <td><a href="https://www.ndss-symposium.org/ndss-paper/black-box-membership-inference-attacks-against-fine-tuned-diffusion-models/">Black-box Membership Inference Attacks Against Fine-tuned Diffusion Models</a></td>
     <td>Black-box</td>
     <td>SD, DDIM</td>
     <td>A score-based MIA tailored for modern DMs, which operates in a black-box setting</td>
@@ -128,7 +128,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td><strong>Property inference</strong></td>
-    <td><a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models (arXiv &#39;23)</a></td>
+    <td><a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models</a></td>
     <td>Black-box</td>
     <td>TabDDPM, DDPM, SMLD, VPSDE, VESDE</td>
     <td>DMs and their sampling methods are susceptible property inference attacks</td>
@@ -157,7 +157,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [37] Carlini et al., USENIX'23 -->
     <td rowspan="3">
       <a href="https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf">
-        Extracting Training Data from Diffusion Models (USENIX &#39;23)
+        Extracting Training Data from Diffusion Models
       </a>
     </td>
     <td>DP-SGD</td>
@@ -177,7 +177,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [38] Wen et al., ICLR'24 -->
     <td rowspan="3">
       <a href="https://openreview.net/forum?id=84n3UwkH7b">
-        Detecting, Explaining, and Mitigating Memorization in Diffusion Models (ICLR &#39;24)
+        Detecting, Explaining, and Mitigating Memorization in Diffusion Models
       </a>
     </td>
     <td>Straightforward method to detect trigger tokens</td>
@@ -196,12 +196,12 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [53] ECCV'24 cross-attention mitigation -->
     <td>
       <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09937.pdf">
-        Unveiling and Mitigating Memorization in Text-to-Image Diffusion Models through Cross Attention (ECCV &#39;24)
+        Unveiling and Mitigating Memorization in Text-to-Image Diffusion Models through Cross Attention
       </a>
     </td>
     <td>Detection &amp; mitigation (attention dispersion)</td>
     <td>SD v1.4, SD v2.0</td>
-    <td>Adding almost no computational cost, maintaining fast training and inference, significantly reducing Similarity Scores from ~0.7 to ~0.25–0.3</td>
+    <td>Adding almost no computational cost, maintaining fast training and inference, significantly reducing Similarity Scores from 0.7 to 0.25–0.3</td>
   </tr>
 
   <!-- ================= Membership inference ================= -->
@@ -210,7 +210,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [42] Duan et al., ICML'23 -->
     <td rowspan="5">
       <a href="https://proceedings.mlr.press/v202/duan23b/duan23b.pdf">
-        Are Diffusion Models Vulnerable to Membership Inference Attacks? (ICML &#39;23)
+        Are Diffusion Models Vulnerable to Membership Inference Attacks?
       </a>
     </td>
     <td>Cutout</td>
@@ -235,7 +235,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [54] DualMD / DistillMD -->
     <td rowspan="2">
       <a href="https://openreview.net/forum?id=PjIe6IesEm">
-        Dual-Model Defense / DistillMD (OpenReview &#39;25)
+        Dual-Model Defense / DistillMD 
       </a>
     </td>
     <td>DualMD</td>
@@ -251,7 +251,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [55] MP-LoRA / SMP-LoRA -->
     <td rowspan="2">
       <a href="https://openreview.net/pdf?id=iVpribuyjP">
-        Privacy-Preserving Low-Rank Adaptation against MIA for Latent Diffusion Models (AAAI &#39;25)
+        Privacy-Preserving Low-Rank Adaptation against MIA for Latent Diffusion Models 
       </a>
     </td>
     <td>MP-LoRA</td>
@@ -267,7 +267,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <tr>
     <td><strong>Property inference</strong></td>
     <td>
-      <a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models (arXiv &#39;23)</a>
+      <a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models </a>
     </td>
     <td>PriSampler</td>
     <td>TabDDPM</td>
