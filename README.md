@@ -73,14 +73,14 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td><a href="https://proceedings.mlr.press/v235/tang24g.html">Membership Inference Attacks on Diffusion Models via Quantile Regression</a></td>
     <td>White-box, Black-box</td>
     <td>DDPM</td>
-    <td>Quantile regression models are trained to predict reconstruction-loss distribution for unseen data</td>
+    <td>Quantile regression models are trained to predict reconstruction loss distribution for unseen data</td>
     <td>Direct access to the trained model</td>
   </tr>
   <tr>
     <td><a href="https://openreview.net/forum?id=rpH9FcCEV6">Efficient Membership Inference for Diffusion Models by Proximal Initialization</a></td>
     <td>Gray-box</td>
     <td>DDPM, SD</td>
-    <td>Utilize ground-truth trajectory and predicted point to infer memberships</td>
+    <td>Utilize groundtruth trajectory and predicted point to infer memberships</td>
     <td>Access intermediate outputs of DMs</td>
   </tr>
   <tr>
@@ -170,7 +170,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
   <tr>
     <td>Auditing with Canaries</td>
-    <td>When auditing less leaky models, canary exposures computed from a single training might underestimate the true data leakage</td>
+    <td>When auditing less leaky models, however, canary exposures computed from a single training might underestimate the true data leakage</td>
   </tr>
 
   <tr>
@@ -199,7 +199,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
         Unveiling and Mitigating Memorization in Text-to-Image Diffusion Models through Cross Attention
       </a>
     </td>
-    <td>Detection &amp; mitigation (attention dispersion)</td>
+    <td>Detection and mitigation</td>
     <td>SD v1.4, SD v2.0</td>
     <td>Adding almost no computational cost, maintaining fast training and inference, significantly reducing Similarity Scores from 0.7 to 0.25–0.3</td>
   </tr>
@@ -256,7 +256,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     </td>
     <td>MP-LoRA</td>
     <td rowspan="2">SD v1.5</td>
-    <td>Reduces ASR to near-random performance while impairing LoRA&#39;s image generation capability</td>
+    <td>Reduces the ASR to near-random performance while impairing LoRA&#39;s image generation capability</td>
   </tr>
   <tr>
     <td>SMP-LoRA</td>
