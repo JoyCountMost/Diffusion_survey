@@ -31,7 +31,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td>A tunable threshold is required to be determined</td>
   </tr>
   <tr>
-    <td><a href="https://arxiv.org/abs/2408.15721">SIDE: Surrogate Conditional Data Extraction from Diffusion Models</a></td>
+    <td><a href="https://arxiv.org/abs/2410.02467">SIDE: Surrogate Conditional Data Extraction from Diffusion Models</a></td>
     <td>White-box</td>
     <td>DDIM</td>
     <td>Highly effective in extracting memorized data</td>
@@ -235,7 +235,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [54] DualMD / DistillMD -->
     <td rowspan="2">
       <a href="https://openreview.net/forum?id=PjIe6IesEm">
-        Dual-Model Defense / DistillMD 
+        Dual-Model Defense: Safeguarding Diffusion Models from Membership Inference Attacks through Disjoint Data Splitting 
       </a>
     </td>
     <td>DualMD</td>
