@@ -161,17 +161,15 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
       </a>
     </td>
     <td>DP-SGD</td>
-    <td>OpenAI-DDPM, DDPM</td>
+    <td rowspan="3">OpenAI-DDPM, DDPM</td>
     <td>Cause the training to fail</td>
   </tr>
   <tr>
     <td>Deduplicating</td>
-    <td>OpenAI-DDPM, DDPM</td>
     <td>Reducing memorization revealed a stronger correlation between training data extraction and duplication rates in models trained on larger-scale datasets</td>
   </tr>
   <tr>
     <td>Auditing with Canaries</td>
-    <td>OpenAI-DDPM, DDPM</td>
     <td>When auditing less leaky models, canary exposures computed from a single training might underestimate the true data leakage</td>
   </tr>
 
@@ -183,17 +181,15 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
       </a>
     </td>
     <td>Straightforward method to detect trigger tokens</td>
-    <td>SD</td>
+    <td rowspan="3">SD</td>
     <td>Ensure a more consistent alignment between prompts and generations</td>
   </tr>
   <tr>
     <td>Inference-time mitigation method</td>
-    <td>SD</td>
     <td rowspan="2">Successfully mitigate the memorization effect and offer a more favorable CLIP score trade-off compared to RTA</td>
   </tr>
   <tr>
     <td>Training-time mitigation method</td>
-    <td>SD</td>
   </tr>
 
   <tr>
@@ -278,6 +274,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td>Lead adversaries to infer property proportions that approximate the predefined values specified by model owners</td>
   </tr>
 </table>
+
 
 
 
