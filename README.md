@@ -157,7 +157,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <!-- [37] Carlini et al., USENIX'23 -->
     <td rowspan="3">
       <a href="https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf">
-        Extracting Training Data from Diffusion Models (USENIX Security &#39;23)
+        Extracting Training Data from Diffusion Models (USENIX &#39;23)
       </a>
     </td>
     <td>DP-SGD</td>
@@ -189,12 +189,11 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <tr>
     <td>Inference-time mitigation method</td>
     <td>SD</td>
-    <td>Successfully mitigate the memorization effect and offer a more favorable CLIP score trade-off compared to RTA</td>
+    <td rowspan="2">Successfully mitigate the memorization effect and offer a more favorable CLIP score trade-off compared to RTA</td>
   </tr>
   <tr>
     <td>Training-time mitigation method</td>
     <td>SD</td>
-    <td></td>
   </tr>
 
   <tr>
@@ -227,15 +226,13 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
   <tr>
     <td>RandAugment</td>
-    <td>Fail to converge</td>
+    <td rowspan="3">Fail to converge</td>
   </tr>
   <tr>
     <td>DP-SGD</td>
-    <td></td>
   </tr>
   <tr>
     <td>&#8467;<sub>2</sub>-regularization</td>
-    <td></td>
   </tr>
 
   <tr>
@@ -281,4 +278,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td>Lead adversaries to infer property proportions that approximate the predefined values specified by model owners</td>
   </tr>
 </table>
+
+
 
