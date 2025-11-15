@@ -2,6 +2,9 @@
 
 Diffusion models (DMs) have been investigated in various domains due to their ability to generate high-quality data, thereby attracting significant attention. However, similar to traditional deep learning systems, there also exist potential threats to DMs. To provide advanced and comprehensive insights into safety, ethics, and trust in DMs, this survey comprehensively elucidates its framework, threats, and countermeasures. Each threat and its countermeasures are systematically examined and categorized to facilitate thorough analysis. Furthermore, we introduce specific examples of how DMs are used, what dangers they might bring, and ways to protect against these dangers. Finally, we discuss key lessons learned, highlight open challenges related to DM security, and outline prospective research directions in this critical field. This work aims to accelerate progress not only in the technical capabilities of generative artificial intelligence but also in the maturity and wisdom of its application.
 
+<br/>
+<br/>
+
 # Taxonomy of privacy risks in DMs
 
 <table align="center">
@@ -17,7 +20,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Training data extraction</strong></td>
-    <td align="left" valign="middle"><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/carlini">Extracting Training Data from Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/carlini">Extracting Training Data from Diffusion Models</a></td>
     <td align="center" valign="middle">Black-box, White-box</td>
     <td align="center" valign="middle">OpenAI-DDPM, DDPM</td>
     <td align="center" valign="middle">Extract training samples from DMs</td>
@@ -25,7 +28,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://openreview.net/forum?id=84n3UwkH7b">Detecting, Explaining, and Mitigating Memorization in Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://openreview.net/forum?id=84n3UwkH7b">Detecting, Explaining, and Mitigating Memorization in Diffusion Models</a></td>
     <td align="center" valign="middle">White-box</td>
     <td align="center" valign="middle">DDIM</td>
     <td align="center" valign="middle">Able to achieve an AUC of 0.999 and TPR@1%FPR of 0.988</td>
@@ -33,7 +36,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/YuxinWenRick/diffusion_memorization">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2410.02467">SIDE: Surrogate Conditional Data Extraction from Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2410.02467">SIDE: Surrogate Conditional Data Extraction from Diffusion Models</a></td>
     <td align="center" valign="middle">White-box</td>
     <td align="center" valign="middle">DDIM</td>
     <td align="center" valign="middle">Highly effective in extracting memorized data</td>
@@ -43,7 +46,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle"><strong>Gradient inversion</strong></td>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2405.20380">Gradient Inversion of Federated Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2405.20380">Gradient Inversion of Federated Diffusion Models</a></td>
     <td align="center" valign="middle">Grey-box, Black-box</td>
     <td align="center" valign="middle">DDPM</td>
     <td align="center" valign="middle">Reconstruct high-resolution images from the gradients</td>
@@ -53,7 +56,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle" rowspan="11"><strong>Membership inference</strong></td>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2210.00968">Membership Inference Attacks Against Text-to-Image Generation Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2210.00968">Membership Inference Attacks Against Text-to-Image Generation Models</a></td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">LDM, DALL-E mini</td>
     <td align="center" valign="middle">Achieve remarkable attack performance</td>
@@ -61,7 +64,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://www.catalyzex.com/paper/membership-inference-attacks-against-text-to/code">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://proceedings.mlr.press/v202/duan23b/duan23b.pdf">Are Diffusion Models Vulnerable to Membership Inference Attacks? </a></td>
+    <td align="center" valign="middle"><a href="https://proceedings.mlr.press/v202/duan23b/duan23b.pdf">Are Diffusion Models Vulnerable to Membership Inference Attacks? </a></td>
     <td align="center" valign="middle">Gray-box</td>
     <td align="center" valign="middle">SD, LDM, DDPM</td>
     <td align="center" valign="middle">Infer the memberships of training samples</td>
@@ -69,7 +72,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/jinhaoduan/SecMI">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://arxiv.org/pdf/2302.03262">Membership Inference Attacks Against Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/pdf/2302.03262">Membership Inference Attacks Against Diffusion Models</a></td>
     <td align="center" valign="middle">White-box, Black-box</td>
     <td align="center" valign="middle">DDIM</td>
     <td align="center" valign="middle">The resilience of DMs to MIA is comparable to that of GANs</td>
@@ -77,7 +80,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://proceedings.mlr.press/v235/tang24g.html">Membership Inference Attacks on Diffusion Models via Quantile Regression</a></td>
+    <td align="center" valign="middle"><a href="https://proceedings.mlr.press/v235/tang24g.html">Membership Inference Attacks on Diffusion Models via Quantile Regression</a></td>
     <td align="center" valign="middle">White-box, Black-box</td>
     <td align="center" valign="middle">DDPM</td>
     <td align="center" valign="middle">Quantile regression models are trained to predict reconstruction loss distribution for unseen data</td>
@@ -85,7 +88,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://openreview.net/forum?id=rpH9FcCEV6">Efficient Membership Inference for Diffusion Models by Proximal Initialization</a></td>
+    <td align="center" valign="middle"><a href="https://openreview.net/forum?id=rpH9FcCEV6">Efficient Membership Inference for Diffusion Models by Proximal Initialization</a></td>
     <td align="center" valign="middle">Gray-box</td>
     <td align="center" valign="middle">DDPM, SD</td>
     <td align="center" valign="middle">Utilize groundtruth trajectory and predicted point to infer memberships</td>
@@ -93,7 +96,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/kong13661/PIA">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2405.14800">Membership Inference on T2I Diffusion via Conditional Likelihood Discrepancy</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2405.14800">Membership Inference on T2I Diffusion via Conditional Likelihood Discrepancy</a></td>
     <td align="center" valign="middle">Gray-box</td>
     <td align="center" valign="middle">SD v1-4</td>
     <td align="center" valign="middle">Estimate the gap between conditional image–text likelihood and images-only likelihood</td>
@@ -101,7 +104,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2403.08487">Model Will Tell: Training Membership Inference for Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2403.08487">Model Will Tell: Training Membership Inference for Diffusion Models</a></td>
     <td align="center" valign="middle">Gray-box</td>
     <td align="center" valign="middle">LDM, DDPM</td>
     <td align="center" valign="middle">Leverage the intrinsic generative priors within the DMs</td>
@@ -109,7 +112,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://dl.acm.org/doi/10.1145/3664647.3681170">Unveiling Structural Memorization: Structural MIA for T2I Diffusion</a></td>
+    <td align="center" valign="middle"><a href="https://dl.acm.org/doi/10.1145/3664647.3681170">Unveiling Structural Memorization: Structural MIA for T2I Diffusion</a></td>
     <td align="center" valign="middle">Gray-box</td>
     <td align="center" valign="middle">DDIM</td>
     <td align="center" valign="middle">First investigate the structural changes during the diffusion process</td>
@@ -117,7 +120,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zhang_Generated_Distributions_Are_All_You_Need_for_Membership_Inference_Attacks_WACV_2024_paper.pdf">Generated Distributions Are All You Need for Membership Inference Attacks Against Generative Models </a></td>
+    <td align="center" valign="middle"><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zhang_Generated_Distributions_Are_All_You_Need_for_Membership_Inference_Attacks_WACV_2024_paper.pdf">Generated Distributions Are All You Need for Membership Inference Attacks Against Generative Models </a></td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">DDPM, DDIM, FastDPM, VQGAN, LDM, CC-FPSE</td>
     <td align="center" valign="middle">Generalize MIA against various generative models including GANs, VAEs, IFs, and DDPMs</td>
@@ -125,7 +128,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/minxingzhang/MIAGM">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2405.20771">Towards Black-box Membership Inference Attack for Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2405.20771">Towards Black-box Membership Inference Attack for Diffusion Models</a></td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">DDIM, Diffusion Transformer, SD, DALL-E 2</td>
     <td align="center" valign="middle">Only require access to the variation API of the model</td>
@@ -133,7 +136,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://www.ndss-symposium.org/ndss-paper/black-box-membership-inference-attacks-against-fine-tuned-diffusion-models/">Black-box Membership Inference Attacks Against Fine-tuned Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://www.ndss-symposium.org/ndss-paper/black-box-membership-inference-attacks-against-fine-tuned-diffusion-models/">Black-box Membership Inference Attacks Against Fine-tuned Diffusion Models</a></td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">SD, DDIM</td>
     <td align="center" valign="middle">A score-based MIA tailored for modern DMs, which operates in a black-box setting</td>
@@ -143,7 +146,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle"><strong>Property inference</strong></td>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models</a></td>
+    <td align="center" valign="middle"><a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models</a></td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">TabDDPM, DDPM, SMLD, VPSDE, VESDE</td>
     <td align="center" valign="middle">DMs and their sampling methods are susceptible property inference attacks</td>
@@ -171,7 +174,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Training data extraction ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="7"><strong>Training data extraction</strong></td>
-    <td align="left" valign="middle" rowspan="3">
+    <td align="center" valign="middle" rowspan="3">
       <a href="https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf">
         Extracting Training Data from Diffusion Models
       </a>
@@ -191,7 +194,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle" rowspan="3">
+    <td align="center" valign="middle" rowspan="3">
       <a href="https://openreview.net/forum?id=84n3UwkH7b">
         Detecting, Explaining, and Mitigating Memorization in Diffusion Models
       </a>
@@ -210,7 +213,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09937.pdf">
         Unveiling and Mitigating Memorization in Text-to-Image Diffusion Models through Cross Attention
       </a>
@@ -224,7 +227,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Membership inference ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="9"><strong>Membership inference</strong></td>
-    <td align="left" valign="middle" rowspan="5">
+    <td align="center" valign="middle" rowspan="5">
       <a href="https://proceedings.mlr.press/v202/duan23b/duan23b.pdf">
         Are Diffusion Models Vulnerable to Membership Inference Attacks?
       </a>
@@ -249,7 +252,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle" rowspan="2">
+    <td align="center" valign="middle" rowspan="2">
       <a href="https://openreview.net/forum?id=PjIe6IesEm">
         Dual-Model Defense: Safeguarding Diffusion Models from Membership Inference Attacks through Disjoint Data Splitting 
       </a>
@@ -265,7 +268,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle" rowspan="2">
+    <td align="center" valign="middle" rowspan="2">
       <a href="https://openreview.net/pdf?id=iVpribuyjP">
         Privacy-Preserving Low-Rank Adaptation against MIA for Latent Diffusion Models 
       </a>
@@ -283,7 +286,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Property inference ================= -->
   <tr>
     <td align="center" valign="middle"><strong>Property inference</strong></td>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2306.05208">PriSampler: Mitigating Property Inference of Diffusion Models </a>
     </td>
     <td align="center" valign="middle">PriSampler</td>
@@ -313,7 +316,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <tr>
     <td align="center" valign="middle" rowspan="8"><strong>Adversarial attacks</strong></td>
     <!-- [61] -->
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://openaccess.thecvf.com/content/CVPR2023W/AML/papers/Zhuang_A_Pilot_Study_of_Query-Free_Adversarial_Attack_Against_Stable_Diffusion_CVPRW_2023_paper.pdf">
         A Pilot Study of Query-Free Adversarial Attack against Stable Diffusion
       </a>
@@ -327,7 +330,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [62] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://aclanthology.org/2024.findings-acl.344/">
         Asymmetric Bias in Text-to-Image Generation with Adversarial Attacks 
       </a>
@@ -341,7 +344,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [63] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://aclanthology.org/2024.findings-emnlp.753/">
         Adversarial Attacks on Parts of Speech: An Empirical Study in Text-to-Image Generation 
       </a>
@@ -355,7 +358,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [64] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_VA3_Virtually_Assured_Amplification_Attack_on_Probabilistic_Copyright_Protection_for_CVPR_2024_paper.pdf">
         VA3: Virtually Assured Amplification Attack on Probabilistic Copyright Protection for T2I GMs 
       </a>
@@ -370,7 +373,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [36] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28503">
         Step Vulnerability Guided Mean Fluctuation Adversarial Attack against Conditional Diffusion Models 
       </a>
@@ -384,7 +387,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [65] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://openreview.net/forum?id=TOWdQQgMJY">
         Discovering Failure Modes of Text-guided Diffusion Models via Adversarial Search 
       </a>
@@ -398,9 +401,9 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [66] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2410.21471">
-        AdvI2I: Adversarial Image Attack on Image-to-Image Diffusion Models (2024)
+        AdvI2I: Adversarial Image Attack on Image-to-Image Diffusion Models 
       </a>
     </td>
     <td align="center" valign="middle">White-box</td>
@@ -412,9 +415,9 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [67] -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2310.11868">
-        To Generate or Not? Safety-Driven Unlearned Diffusion Models Are Still Easy To Generate Unsafe Images … For Now (ECCV ’24)
+        To Generate or Not? Safety-Driven Unlearned Diffusion Models Are Still Easy To Generate Unsafe Images … For Now 
       </a>
     </td>
     <td align="center" valign="middle">Black-box</td>
@@ -445,7 +448,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Adversarial attacks</strong></td>
     <!-- [68] Latent Guard -->
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2404.08031">
         Latent Guard: A Safety Framework for Text-to-Image Generation 
       </a>
@@ -460,7 +463,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <!-- [69] ProTIP -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04783.pdf">
         ProTIP: Probabilistic Robustness Verification on Text-to-Image Diffusion Models against Stochastic Perturbation 
       </a>
@@ -468,20 +471,24 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">ProTIP</td>
     <td align="center" valign="middle">SD v1.5, SD v1.4, SDXL-Turbo</td>
     <td align="center" valign="middle">Incorporate several sequential analysis methods to dynamically determine the sample size and thus enhance the efficiency</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">
+      <a href="https://github.com/wellzline/ProTIP/">code</a>
+    </td>
   </tr>
 
   <!-- [70] Embedding Sanitizer -->
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2411.10329">
         Safe Text-to-Image Generation: Simply Sanitize the Prompt Embedding (Embedding Sanitizer)
       </a>
     </td>
     <td align="center" valign="middle">Embedding Sanitizer</td>
-    <td align="center" valign="middle">SD v1.4</td>
+    <td align="center" valign="middle">SD-v1.4</td>
     <td align="center" valign="middle">Not only mitigates the generation of harmful concepts but also improves interpretability and controllability</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">
+      <a href="https://anonymous.4open.science/r/Embedding-Sanitizer-166E/">code</a>
+    </td>
   </tr>
 </table>
 
@@ -505,8 +512,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Backdoor ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="5"><strong>Backdoor</strong></td>
-    <td align="left" valign="middle">
-      <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chou_How_to_Backdoor_Diffusion_Models_CVPR_2023_paper.pdf">[11] How to Backdoor Diffusion Models?</a>
+    <td align="center" valign="middle">
+      <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chou_How_to_Backdoor_Diffusion_Models_CVPR_2023_paper.pdf">How to Backdoor Diffusion Models?</a>
     </td>
     <td align="center" valign="middle">White-Box</td>
     <td align="center" valign="middle">DDPM</td>
@@ -516,8 +523,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_TrojDiff_Trojan_Attacks_on_Diffusion_Models_With_Diverse_Targets_CVPR_2023_paper.pdf">[12] TrojDiff: Trojan Attacks on Diffusion Models with Diverse Targets</a>
+    <td align="center" valign="middle">
+      <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_TrojDiff_Trojan_Attacks_on_Diffusion_Models_With_Diverse_Targets_CVPR_2023_paper.pdf">TrojDiff: Trojan Attacks on Diffusion Models with Diverse Targets</a>
     </td>
     <td align="center" valign="middle">White-Box</td>
     <td align="center" valign="middle">DDPM, DDIM</td>
@@ -527,8 +534,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://dl.acm.org/doi/10.1145/3581783.3612108">[13] Text-to-Image Diffusion Models can be Easily Backdoored (BadT2I)</a>
+    <td align="center" valign="middle">
+      <a href="https://dl.acm.org/doi/10.1145/3581783.3612108">Text-to-Image Diffusion Models can be Easily Backdoored (BadT2I)</a>
     </td>
     <td align="center" valign="middle">White-Box</td>
     <td align="center" valign="middle">SD v1.4</td>
@@ -538,8 +545,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/6b055b95d689b1f704d8f92191cdb788-Paper-Conference.pdf">[14] VillanDiffusion: A Unified Backdoor Attack Framework for Diffusion Models</a>
+    <td align="center" valign="middle">
+      <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/6b055b95d689b1f704d8f92191cdb788-Paper-Conference.pdf">VillanDiffusion: A Unified Backdoor Attack Framework for Diffusion Models</a>
     </td>
     <td align="center" valign="middle">White-Box</td>
     <td align="center" valign="middle">DDPM, LDM, NCSN</td>
@@ -549,76 +556,76 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2503.17724">[71] Towards Invisible Backdoor Attack on Text-to-Image Diffusion Model</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2503.17724">Towards Invisible Backdoor Attack on Text-to-Image Diffusion Model</a>
     </td>
     <td align="center" valign="middle">White-Box</td>
     <td align="center" valign="middle">SD v1.4</td>
     <td align="center" valign="middle">Achieve high attack success with stronger resistance to defenses</td>
     <td align="center" valign="middle">Extra time consumption compared to previous works</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/Robin-WZQ/IBA">code</a></td>
   </tr>
 
   <!-- ================= Jailbreak ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="9"><strong>Jailbreak</strong></td>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2404.02928">[72] Jailbreaking Prompt Attack: A Controllable Adversarial Attack Against Diffusion Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2404.02928">Jailbreaking Prompt Attack: A Controllable Adversarial Attack Against Diffusion Models</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">Open sourced T2I, MidJourney</td>
     <td align="center" valign="middle">Bypass both text and image safety checkers</td>
     <td align="center" valign="middle">Concept pairs are given by ChatGPT, which needs prompting that out of the automated framework</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/mjc-ma/JPA">code</a></td>
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://dl.acm.org/doi/10.1145/3576915.3623222">[73] Unsafe Diffusion: On the Generation of Unsafe Images and Hateful Memes from Text-to-Image Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2305.13873">Unsafe Diffusion: On the Generation of Unsafe Images and Hateful Memes from Text-to-Image Models</a>
     </td>
     <td align="center" valign="middle">White-box</td>
     <td align="center" valign="middle">SD, LDM, DALL·E 2-demo, DALL·E mini</td>
     <td align="center" valign="middle">Easily generate realistic hateful meme variants</td>
     <td align="center" valign="middle">Full access to the T2I model, i.e., the adversary can modify model parameters to personalize image generation</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/YitingQu/unsafe-diffusion">code</a></td>
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_MMA-Diffusion_Multimodal_Attack_on_Diffusion_Models_CVPR_2024_paper.pdf">[74] MMA-Diffusion: Multimodal Attack on Diffusion Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2311.17516"> MMA-Diffusion: Multimodal Attack on Diffusion Models</a>
     </td>
     <td align="center" valign="middle">White-Box, Black-Box</td>
     <td align="center" valign="middle">SD, Midjourney, Leonardo.Ai</td>
     <td align="center" valign="middle">Bypass prompt filters and safety checkers</td>
     <td align="center" valign="middle">Ideal prompt filters and safety checkers</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/cure-lab/MMA-Diffusion">code</a></td>
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2308.01757">[75] AutoDAN: Automated Jailbreak via Adversarial Prompts (T2I adaptation)</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2408.10848">Perception-guided Jailbreak against Text-to-Image Models</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">DALL·E 2, DALL·E 3, Cogview3, SDXL, Tongyiwanxiang, Hunyuan</td>
     <td align="center" valign="middle">Require no specific T2I architecture, and produce highly natural adversarial prompts that maintain semantic coherence</td>
     <td align="center" valign="middle">Lack classic models, such as Midjourney and Leonardo.Ai</td>
-    <td align="center" valign="middle"><a href="https://github.com/rotaryhammer/code-autodan">code</a></td>
+    <td align="center" valign="middle">code</td>
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://papers.nips.cc/paper_files/paper/2024/hash/4b1c0c4c6a49a0c3b8f5f2f9d7a1e8a5-Abstract-Conference.html">[76] Col-JailBreak: Collaborative Generation and Editing for Jailbreaking T2I</a>
+    <td align="center" valign="middle">
+      <a href="https://papers.nips.cc/paper_files/paper/2024/hash/4b1c0c4c6a49a0c3b8f5f2f9d7a1e8a5-Abstract-Conference.html">Col-JailBreak: Collaborative Generation and Editing for Jailbreaking T2I</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">GPT-4, DALL·E 2</td>
     <td align="center" valign="middle">Adaptive normal safe substitution, inpainting-driven injection of unsafe content, and contrastive language–image-guided collaborative optimization</td>
     <td align="center" valign="middle">Complex prompts or multiple sensitive words require repeated edits</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/tsingqguo/coljailbreak">code</a></td>
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2408.13896">[77] HTS-Attack: Heuristic Token Search for Jailbreaking Text-to-Image Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2408.13896">HTS-Attack: Heuristic Token Search for Jailbreaking Text-to-Image Models</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">SD v1.4, SafeGen, SLD</td>
@@ -628,19 +635,19 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2504.20376">[78] Inception: Jailbreak the Memory Mechanism of T2I Generation Systems</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2504.20376">Inception: Jailbreak the Memory Mechanism of T2I Generation Systems</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">DALL·E 3</td>
     <td align="center" valign="middle">Recursively split unsafe words into benign chunks, ensuring no semantic loss while bypassing safety filters</td>
     <td align="center" valign="middle">Consider DALL·E 3 only</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/Shiqian-Zhao996/inception-T2I-system.git">code</a></td>
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2504.11106">[79] Token-level Constraint Boundary Search for Jailbreaking Text-to-Image Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2504.11106">Token-level Constraint Boundary Search for Jailbreaking Text-to-Image Models</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">SD v1.4, SLD (Medium), SafeGen, DALL·E 3</td>
@@ -650,8 +657,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://ieeexplore.ieee.org/document/10646702">[80] SneakyPrompt: Jailbreaking Text-to-Image Generative Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2305.12082">SneakyPrompt: Jailbreaking Text-to-Image Generative Models</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">DALL·E 2</td>
@@ -680,7 +687,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Backdoor ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Backdoor</strong></td>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11361.pdf">T2IShield: Defending Against Backdoors on Text-to-Image Diffusion Models</a>
     </td>
     <td align="center" valign="middle">T2IShield</td>
@@ -689,7 +696,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/Robin-WZQ/T2IShield">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2410.12761">SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image and Video Generation</a>
     </td>
     <td align="center" valign="middle">SAFREE</td>
@@ -698,7 +705,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/jaehong31/SAFREE">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34941/37096">UFID: A Unified Framework for Black-box Input-level Backdoor Detection on Diffusion Models</a>
     </td>
     <td align="center" valign="middle">UFID</td>
@@ -710,7 +717,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Jailbreak ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Jailbreak</strong></td>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://www.researchgate.net/publication/389786654_Sparse_Autoencoder_as_a_Zero-Shot_Classifier_for_Concept_Erasing_in_Text-to-Image_Diffusion_Models">Interpret then Deactivate (ItD): Sparse Autoencoder as a Zero-Shot Classifier for Concept Erasing in T2I Diffusion Models</a>
     </td>
     <td align="center" valign="middle">Interpret then Deactivate</td>
@@ -719,8 +726,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle">
-      <a href="https://github.com/Visualignment/SafetyDPO">SafetyDPO: Scalable Safety Alignment for Text-to-Image Generation</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2412.10493">SafetyDPO: Scalable Safety Alignment for Text-to-Image Generation</a>
     </td>
     <td align="center" valign="middle">SafetyDPO</td>
     <td align="center" valign="middle">SD v1.5, SDXL</td>
@@ -728,7 +735,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/Visualignment/SafetyDPO">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle">
+    <td align="center" valign="middle">
       <a href="https://openreview.net/forum?id=hgTFotBRKl">SAFREE: Training-Free and Adaptive Guard for Safe Text-to-Image and Video Generation</a>
     </td>
     <td align="center" valign="middle">SAFREE</td>
@@ -757,27 +764,27 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ========== Model extraction ========== -->
   <tr>
     <td align="center" valign="middle"><strong>Model extraction</strong></td>
-    <td align="left" valign="middle">
-      <a href="https://visual-ai.github.io/ice/" title="ICE: Intrinsic Concept Extraction from a Single Image via Diffusion Models">[89] ICE: Intrinsic Concept Extraction from a Single Image via Diffusion Models</a>
+    <td align="center" valign="middle">
+      <a href="https://visual-ai.github.io/ice/" title="ICE: Intrinsic Concept Extraction from a Single Image via Diffusion Models">ICE: Intrinsic Concept Extraction from a Single Image via Diffusion Models</a>
     </td>
     <td align="center" valign="middle">White-box</td>
     <td align="center" valign="middle">SD v1.5, LDM</td>
     <td align="center" valign="middle">Yield meaningful prompts that synthesize accurate, diverse images of a target concept</td>
     <td align="center" valign="middle">Without considering commercial models like DALL·E 3, Midjourney and Leonardo.Ai</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://visual-ai.github.io/ice/">code</a></td>
   </tr>
 
   <!-- ========== Prompt stealing ========== -->
   <tr>
     <td align="center" valign="middle"><strong>Prompt stealing</strong></td>
-    <td align="left" valign="middle">
-      <a href="https://arxiv.org/abs/2302.09923" title="PromptStealer: Black-box Prompt Stealing Attacks against Text-to-Image Diffusion Models">[90] PromptStealer: Black-box Prompt Stealing Attacks against Text-to-Image Diffusion Models</a>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2302.09923" title="PromptStealer: Black-box Prompt Stealing Attacks against Text-to-Image Diffusion Models">PromptStealer: Black-box Prompt Stealing Attacks against Text-to-Image Diffusion Models</a>
     </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">SD (v1.4, v1.5, v2.0), Midjourney, DALL·E 2</td>
     <td align="center" valign="middle">Identify the modifiers within the generated image</td>
     <td align="center" valign="middle">Require a strong assumption for the defender, i.e., white-box access to the attack model</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/verazuo/prompt-stealing-attack">code</a></td>
   </tr>
 
   <!-- ========== Data misuse (placeholder row as in figure) ========== -->
@@ -811,7 +818,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Model extraction ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="1"><strong>Model extraction</strong></td>
-    <td align="left" valign="middle">[91] NAIVEWM, FIXEDWM</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2305.12502" title="Watermarking Diffusion Model"> Watermarking Diffusion Model</a>
     <td align="center" valign="middle">NAIVEWM, FIXEDWM</td>
     <td align="center" valign="middle">LDM</td>
     <td align="center" valign="middle">Inject the watermark into the DMs and can be verified by the pre-defined prompts</td>
@@ -821,7 +829,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Prompt stealing ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="1"><strong>Prompt stealing</strong></td>
-    <td align="left" valign="middle">[92] PromptCARE</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2308.02816" title="PromptCARE: Prompt Copyright Protection by Watermark Injection and Verification">PromptCARE: Prompt Copyright Protection by Watermark Injection and Verification</a>
     <td align="center" valign="middle">PromptCARE</td>
     <td align="center" valign="middle">BERT, RoBERTa, Facebook OPT-1.3b</td>
     <td align="center" valign="middle">Watermark and verification schemes specifically designed for unique properties of prompts and the natural language domain</td>
@@ -831,21 +840,24 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   <!-- ================= Data misuse ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Data misuse</strong></td>
-    <td align="left" valign="middle"><a href="https://arxiv.org/abs/2501.03085">[93] TabWak</a></td>
+    <td align="center" valign="middle">
+      <a href="https://openreview.net/pdf?id=71pur4y8gs" title="TabWak: A Watermark for Tabular Diffusion Models">TabWak: A Watermark for Tabular Diffusion Models</a>
     <td align="center" valign="middle">TabWak</td>
     <td align="center" valign="middle">Tabular DM</td>
     <td align="center" valign="middle">Control the sampling of Gaussian latents for table row synthesis through the diffusion backbone</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle"><a href="https://github.com/chaoyitud/TabWak">code</a></td>
   </tr>
   <tr>
-    <td align="left" valign="middle">[94] End-to-end watermarking</td>
+    <td align="center" valign="middle">
+      <a href="https://openreview.net/pdf?id=71pur4y8gs" title="Flexible and Secure Watermarking for Latent Diffusion Model">Flexible and Secure Watermarking for Latent Diffusion Model</a>
     <td align="center" valign="middle">End-to-end watermarking</td>
     <td align="center" valign="middle">LDM</td>
     <td align="center" valign="middle">Enable the embedded message in the generated image to be modified as needed without retraining or fine-tuning the LDM</td>
     <td align="center" valign="middle">code</td>
   </tr>
   <tr>
-    <td align="left" valign="middle"><a href="https://arankomatsuzaki.wordpress.com/2025/01/17/ft-shield-secure-copyright-verification-for-image-generation-models-with-robust-watermarking/">[95] FT-Shield</a></td>
+    <td align="center" valign="middle">
+    <a href="https://arxiv.org/pdf/2310.02401" title="FT-Shield: A Watermark Against Unauthorized Fine-tuning in Text-to-Image Diffusion Models">FT-Shield: A Watermark Against Unauthorized Fine-tuning in Text-to-Image Diffusion Models</a>
     <td align="center" valign="middle">FT-Shield</td>
     <td align="center" valign="middle">LDM</td>
     <td align="center" valign="middle">Watermark transfer from source images to generated content, enabling copyright verification</td>
@@ -856,8 +868,8 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 <br/>
 
+<!-- ======================= TABLE 11 — Fairness (Issues) ======================= -->
 # Taxonomy of fairness issues in DMs
-<!-- Taxonomy of privacy risks in DMs (TABLE11 – Fairness) -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Category</th>
@@ -871,21 +883,24 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle"><strong>Fairness</strong></td>
-    <td align="center" valign="middle">[96]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2409.09315">
+        Exploring Privacy and Fairness Risks in Sharing Diffusion Models: An Adversarial Perspective
+      </a>
+    </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">NCSN, DDPM, SDEM, TabDDPM</td>
-    <td align="center" valign="middle">Fairness poisoning attacks: manipulate training data distribution to compromise the integrity of downstream models</td>
-    <td align="center" valign="middle">Limited generalization to other models like GANs and VAEs</td>
+    <td align="center" valign="middle">Fairness poisoning attacks manipulate training distribution to compromise downstream integrity</td>
+    <td align="center" valign="middle">Limited generalization to other models like GANs/VAEs</td>
     <td align="center" valign="middle">code</td>
   </tr>
 </table>
 
-
 <br/>
 <br/>
 
-# Taxonomy of defense methods against fairness issues in DMs 
-<!-- Taxonomy of defense methods against privacy issues in DMs (TABLE12 – Fairness) -->
+<!-- =================== TABLE 12 — Fairness (Defenses) =================== -->
+# Taxonomy of defense methods against fairness issues in DMs
 <table align="center">
   <tr>
     <th align="center" valign="middle">Threats</th>
@@ -898,35 +913,60 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle" rowspan="4"><strong>Fairness</strong></td>
-    <td align="center" valign="middle">[97]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2403.01785">
+        Finetuning Text-to-Image Diffusion Models for Fairness
+      </a>
+    </td>
     <td align="center" valign="middle">Fair Diffusion</td>
     <td align="center" valign="middle">SD v1.5</td>
-    <td align="center" valign="middle">Use learned biases and user guidance to steer the model toward a specified fairness goal during inference</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">Use learned bias priors + user guidance to steer toward specified fairness goals at inference</td>
+    <td align="center" valign="middle"><a href="https://github.com/sail-sg/Fair_Diffusion">code</a></td>
   </tr>
 
   <tr>
-    <td align="center" valign="middle">[98]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2403.01785">
+        Distributional Fair Tuning (DFT) / Adjusted DFT for Text-to-Image Diffusion
+      </a>
+    </td>
     <td align="center" valign="middle">DFT, Adjusted DFT</td>
     <td align="center" valign="middle">Runwayml/SD-v1-5</td>
-    <td align="center" valign="middle">An alignment loss that steers image generation toward target distributions using adjusted gradients to optimize on-output losses</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">Alignment loss steers generations toward target distributions via adjusted gradients</td>
+    <td align="center" valign="middle"><a href="https://github.com/sail-sg/Fair_Diffusion">code</a></td>
   </tr>
 
   <tr>
-    <td align="center" valign="middle">[99]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/abs/2402.13850">
+        DifFaiRec: Diffusion-based Fair Recommender System
+      </a>
+    </td>
     <td align="center" valign="middle">DifFaiRec</td>
     <td align="center" valign="middle">Diffusion Model</td>
-    <td align="center" valign="middle">Design a counterfactual module to reduce the model sensitivity to protected attributes and provide mathematical explanations</td>
+    <td align="center" valign="middle">Counterfactual module reduces sensitivity to protected attributes; with mathematical explanations</td>
     <td align="center" valign="middle">code</td>
   </tr>
+
+<tr>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2503.12536">
+        Debiasing Diffusion Model: Enhancing Fairness through Latent Representation Learning in Stable Diffusion Model
+      </a>
+    </td>
+    <td align="center" valign="middle">DDM</td>
+    <td align="center" valign="middle">SD v1.5,SD v2</td>
+    <td align="center" valign="middle">Learn debiased latent representations via indicator-guided training, ensuring fairness without predefined sensitive attributes</td>
+    <td align="center" valign="middle">code</td>
+  </tr>
+
 </table>
 
 <br/>
 <br/>
 
+<!-- ======================= TABLE 13 — Hallucination (Issues) ======================= -->
 # Taxonomy of hallucination issues in DMs
-<!-- Taxonomy of privacy risks in DMs (TABLE13 – Hallucination) -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Category</th>
@@ -940,7 +980,11 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle" rowspan="2"><strong>Hallucination</strong></td>
-    <td align="center" valign="middle">[108]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2412.05722">
+        Evaluating Hallucination in Text-to-Image Diffusion Models with Scene-Graph based Question-Answering Agent
+      </a>
+    </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">SD v1-4, SD v2, SD XL</td>
     <td align="center" valign="middle">Provide human-aligned, intuitive comprehensive scoring</td>
@@ -949,20 +993,26 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
 
   <tr>
-    <td align="center" valign="middle">[109]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2406.09358">
+        Understanding Hallucinations in Diffusion Models through Mode Interpolation
+      </a>
+    </td>
     <td align="center" valign="middle">Black-box</td>
     <td align="center" valign="middle">DDPM</td>
-    <td align="center" valign="middle">Hallucination is indicated by high variance in the sample’s trajectory during the final backward steps</td>
-    <td align="center" valign="middle">The selection of the right timesteps is key to detect hallucinations</td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">Hallucination is indicated by high variance in the sample’s trajectory during the final backward steps
+</td>
+    <td align="center" valign="middle">The selection of the right timesteps is key to detect hallucinations
+ </td>
+    <td align="center" valign="middle"><a href="https://github.com/locuslab/diffusion-model-hallucination">code</a></td>
   </tr>
 </table>
 
 <br/>
 <br/>
 
+<!-- =================== TABLE 14 — Hallucination (Defenses) =================== -->
 # Taxonomy of defense methods against hallucination issues in DMs
-<!-- Taxonomy of defense methods against privacy issues in DMs (TABLE14 – Hallucination) -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Threats</th>
@@ -975,36 +1025,43 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Hallucination</strong></td>
-    <td align="center" valign="middle">[110]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2404.05980">
+        Tackling Structural Hallucination in Image Translation with Local Diffusion Processes
+      </a>
+    </td>
     <td align="center" valign="middle">Local Diffusion processes</td>
     <td align="center" valign="middle">DDPM, DDIM</td>
-    <td align="center" valign="middle">
-      OOD estimation with two modules: a “branching” module that predicts inside and outside OOD regions,
-      and a “fusion” module that combines them into a unified output
-    </td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">OOD estimation with two modules: a “branching” module that predicts inside and outside OOD regions, and a “fusion” module that combines them into a unified output
+</td>
+    <td align="center" valign="middle"><a href="https://github.com/edshkim98/LocalDiffusion-Hallucination">code</a></td>
   </tr>
 
   <tr>
-    <td align="center" valign="middle">[111]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2409.10597">
+        Optimizing Resource Consumption in Text-to-Image Diffusion Models via Hallucination Early Detection
+      </a>
+    </td>
     <td align="center" valign="middle">DHEaD (Hallucination Early Detection)</td>
     <td align="center" valign="middle">SD2</td>
-    <td align="center" valign="middle">
-      Combine cross-attention maps with a new metric, the predicted final image, to anticipate the final result
-      using information from the early phases of generation
-    </td>
+    <td align="center" valign="middle">Combine cross-attention maps with a new metric, the predicted final image, to anticipate the final result using information from the early phases of generation</td>
     <td align="center" valign="middle">code</td>
   </tr>
 
   <tr>
-    <td align="center" valign="middle">[109]</td>
+    <td align="center" valign="middle">
+      <a href="https://arxiv.org/pdf/2406.09358">
+        Understanding Hallucinations in Diffusion Models through Mode Interpolation
+      </a>
+    </td>
     <td align="center" valign="middle">Mode Interpolation</td>
     <td align="center" valign="middle">DDPM</td>
-    <td align="center" valign="middle">
-      Characterize the variance in the sample’s trajectory during the final few backward sampling steps
-    </td>
-    <td align="center" valign="middle">code</td>
+    <td align="center" valign="middle">Characterize the variance in the sample’s trajectory during the final few backward sampling steps
+</td>
+    <td align="center" valign="middle"><a href="https://github.com/locuslab/diffusion-model-hallucination">code</a></td>
   </tr>
 </table>
+
 
 
