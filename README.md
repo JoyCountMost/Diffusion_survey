@@ -171,7 +171,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- ================= Training data extraction ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="7"><strong>Training data extraction</strong></td>
     <td align="center" valign="middle" rowspan="3">
@@ -224,7 +223,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/renjie3/MemAttn">code</a></td>
   </tr>
 
-  <!-- ================= Membership inference ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="9"><strong>Membership inference</strong></td>
     <td align="center" valign="middle" rowspan="5">
@@ -283,7 +281,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">Effectively protects membership privacy while maintaining strong image generation quality</td>
   </tr>
 
-  <!-- ================= Property inference ================= -->
   <tr>
     <td align="center" valign="middle"><strong>Property inference</strong></td>
     <td align="center" valign="middle">
@@ -312,7 +309,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- Adversarial attacks -->
   <tr>
     <td align="center" valign="middle" rowspan="8"><strong>Adversarial attacks</strong></td>
     <!-- [61] -->
@@ -328,7 +324,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/OPTML-Group/QF-Attack">code</a></td>
   </tr>
 
-  <!-- [62] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://aclanthology.org/2024.findings-acl.344/">
@@ -342,7 +337,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
 
-  <!-- [63] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://aclanthology.org/2024.findings-emnlp.753/">
@@ -356,7 +350,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/shahariar-shibli/Adversarial-Attack-on-POS-Tags">code</a></td>
   </tr>
 
-  <!-- [64] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_VA3_Virtually_Assured_Amplification_Attack_on_Probabilistic_Copyright_Protection_for_CVPR_2024_paper.pdf">
@@ -371,7 +364,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
   </tr>
   </tr>
 
-  <!-- [36] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28503">
@@ -385,7 +377,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/yuhongwei22/MFA">code</a></td>
   </tr>
 
-  <!-- [65] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://openreview.net/forum?id=TOWdQQgMJY">
@@ -399,7 +390,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://sage-diffusion.github.io/">code</a></td>
   </tr>
 
-  <!-- [66] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2410.21471">
@@ -413,7 +403,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/Spinozaaa/AdvI2I">code</a></td>
   </tr>
 
-  <!-- [67] -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2310.11868">
@@ -433,7 +422,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 
 # Taxonomy of defense methods against robustness issues in DMs
 
-<!-- ================= TABLE 6: Defenses against adversarial attacks ================= -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Threats</th>
@@ -444,7 +432,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- Adversarial attacks -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Adversarial attacks</strong></td>
     <!-- [68] Latent Guard -->
@@ -461,7 +448,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     </td>
   </tr>
 
-  <!-- [69] ProTIP -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04783.pdf">
@@ -476,7 +462,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     </td>
   </tr>
 
-  <!-- [70] Embedding Sanitizer -->
   <tr>
     <td align="center" valign="middle">
       <a href="https://arxiv.org/abs/2411.10329">
@@ -509,7 +494,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- ================= Backdoor ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="5"><strong>Backdoor</strong></td>
     <td align="center" valign="middle">
@@ -566,7 +550,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/Robin-WZQ/IBA">code</a></td>
   </tr>
 
-  <!-- ================= Jailbreak ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="9"><strong>Jailbreak</strong></td>
     <td align="center" valign="middle">
@@ -673,7 +656,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 
 # Taxonomy of defense methods against safety issues in DMs
-<!-- ================= Defense methods (Backdoor & Jailbreak) ================= -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Threats</th>
@@ -684,7 +666,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- ================= Backdoor ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Backdoor</strong></td>
     <td align="center" valign="middle">
@@ -714,7 +695,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/GuanZihan/official_UFID">code</a></td>
   </tr>
 
-  <!-- ================= Jailbreak ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Jailbreak</strong></td>
     <td align="center" valign="middle">
@@ -749,7 +729,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 
 # Taxonomy of copyright issues in DMs
-<!-- === Taxonomy of privacy risks in DMs — TABLE (Model extraction / Prompt stealing / Data misuse) === -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Category</th>
@@ -761,7 +740,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- ========== Model extraction ========== -->
+
   <tr>
     <td align="center" valign="middle"><strong>Model extraction</strong></td>
     <td align="center" valign="middle">
@@ -774,7 +753,7 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://visual-ai.github.io/ice/">code</a></td>
   </tr>
 
-  <!-- ========== Prompt stealing ========== -->
+
   <tr>
     <td align="center" valign="middle"><strong>Prompt stealing</strong></td>
     <td align="center" valign="middle">
@@ -787,7 +766,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle"><a href="https://github.com/verazuo/prompt-stealing-attack">code</a></td>
   </tr>
 
-  <!-- ========== Data misuse (placeholder row as in figure) ========== -->
   <tr>
     <td align="center" valign="middle"><strong>Data misuse</strong></td>
     <td align="center" valign="middle">-</td>
@@ -804,7 +782,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 
 #  Taxonomy of defense methods against copyright issues in DMs
-<!-- Taxonomy of defense methods against privacy issues in DMs (TABLE10-style) -->
 <table align="center">
   <tr>
     <th align="center" valign="middle">Threats</th>
@@ -815,7 +792,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <th align="center" valign="middle">Code</th>
   </tr>
 
-  <!-- ================= Model extraction ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="1"><strong>Model extraction</strong></td>
     <td align="center" valign="middle">
@@ -826,7 +802,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
 
-  <!-- ================= Prompt stealing ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="1"><strong>Prompt stealing</strong></td>
     <td align="center" valign="middle">
@@ -837,7 +812,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
     <td align="center" valign="middle">code</td>
   </tr>
 
-  <!-- ================= Data misuse ================= -->
   <tr>
     <td align="center" valign="middle" rowspan="3"><strong>Data misuse</strong></td>
     <td align="center" valign="middle">
@@ -868,7 +842,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 <br/>
 
-<!-- ======================= TABLE 11 — Fairness (Issues) ======================= -->
 # Taxonomy of fairness issues in DMs
 <table align="center">
   <tr>
@@ -899,7 +872,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 <br/>
 
-<!-- =================== TABLE 12 — Fairness (Defenses) =================== -->
 # Taxonomy of defense methods against fairness issues in DMs
 <table align="center">
   <tr>
@@ -965,7 +937,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 <br/>
 
-<!-- ======================= TABLE 13 — Hallucination (Issues) ======================= -->
 # Taxonomy of hallucination issues in DMs
 <table align="center">
   <tr>
@@ -1011,7 +982,6 @@ Diffusion models (DMs) have been investigated in various domains due to their ab
 <br/>
 <br/>
 
-<!-- =================== TABLE 14 — Hallucination (Defenses) =================== -->
 # Taxonomy of defense methods against hallucination issues in DMs
 <table align="center">
   <tr>
